@@ -1,16 +1,75 @@
-# React + Vite
+<h1 align="center">⚡ Pokédex API ⚡</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://img.pokemondb.net/sprites/items/poke-ball.png" width="70" />
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  Uma Pokédex moderna feita em <b>React + Vite</b> que consome a <a href="https://pokeapi.co/">PokéAPI</a> 🎮<br>
+  Inclui sprites Shiny ✨, modo escuro 🌙, sons personalizados 🔊, favoritos ⭐ e gráficos de atributos 📊!
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🖼️ Preview do projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> 💡 Este é um print real do seu projeto rodando:
+>
+> ![Preview da Pokédex](./src/assets/print.jpeg)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Funcionalidades principais
+
+- 🔍 **Busca dinâmica** com sugestões automáticas  
+- 🎲 **Pokémon aleatório** com som e flash de pokébola  
+- ✨ **Alternar versão Shiny** (com som especial)  
+- ⭐ **Favoritos** com armazenamento local (`localStorage`)  
+- 🌈 **Listagem por tipo** (Fire, Water, Fairy, etc.)  
+- 🧬 **Linha evolutiva clicável**  
+- 📊 **Gráfico de atributos base** com Recharts  
+- 🌙 **Modo escuro e claro** com transição suave  
+- 🔊 **Efeitos sonoros** personalizados e animados  
+
+---
+
+## 🧠 Tecnologias utilizadas
+
+| Tecnologia | Função |
+|-------------|---------|
+| ⚛️ **React + Vite** | Estrutura e build do app |
+| 🎨 **CSS puro** | Estilização moderna e responsiva |
+| 📊 **Recharts** | Gráficos dos atributos base |
+| 🌐 **PokéAPI** | Dados oficiais dos Pokémon |
+| 💾 **LocalStorage** | Salvar favoritos |
+| 🔊 **Sons em MP3** | Pokébola, shiny e aparecimento |
+
+---
+
+## 🌐 APIs utilizadas
+
+| Descrição | Endpoint |
+|------------|-----------|
+| Lista geral de Pokémons | `https://pokeapi.co/api/v2/pokemon?limit=1000` |
+| Detalhes de um Pokémon | `https://pokeapi.co/api/v2/pokemon/{nome}` |
+| Espécie e Evolução | `https://pokeapi.co/api/v2/pokemon-species/{nome}` + `https://pokeapi.co/api/v2/evolution-chain/{id}` |
+| Pokémons por tipo | `https://pokeapi.co/api/v2/type/{tipo}` |
+| Sprites modernas | `https://img.pokemondb.net/sprites/home/...` |
+| Sprites clássicas (fallback) | `https://raw.githubusercontent.com/PokeAPI/sprites/...` |
+
+---
+
+## 💻 Como executar o projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/LeticiaCGarcia/PokedexAPI.git
+
+# Entre na pasta
+cd PokedexAPI
+
+# Instale as dependências
+npm install
+
+# Execute o projeto
+npm run dev
