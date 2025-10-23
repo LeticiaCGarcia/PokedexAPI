@@ -13,8 +13,6 @@
 
 ## 🖼️ Preview do projeto
 
-> 💡 Este é um print real do seu projeto rodando:
->
 > ![Preview da Pokédex](./src/assets/print.jpeg)
 
 ---
